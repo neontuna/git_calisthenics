@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing HTML5 elements</title>
+</head>
+
+<style type="text/css">
+.alt {
+	background: #ddd;
+}
+
+th:first-of-type {
+	background: #707070;
+}
+
+.readerlink a {
+	display: none;
+	color: #555;
+}
+
+.readerlink a:focus {
+	display: visible;
+	color: #555;
+}
+
+input[type=email]:invalid {
+	background: red;
+}
+
+</style>
+
+<body>
+<time datetime="2052-11-21">Thursday 21st November 2052</time>
+
+<blockquote>
+	<p>
+		I <mark>love</mark> Star Wars
+	</p>
+</blockquote>
+
+<p>
+<s>This isn't presentation, its meaningful?</s>
+
+Apparently <del>&lt;del&gt;</del> works the same way?
+</p>
+
+<table>
+	<caption>King of the Hill</caption>
+	<colgroup>
+		<col>
+		<col class="alt">
+		<col>
+	</colgroup>
+	<tr>
+		<th>Highlight this text</th>
+	</tr>
+	<tr>
+		<td>This</td>
+		<td>That</td>
+		<td>The other</td>
+	</tr>
+	<tr>
+		<th>But not this text.</th>
+	</tr>
+	<tr>
+		<td>Hank</td>
+		<td>Peggy</td>
+		<td>Ladybird</td>
+	</tr>
+</table>
+
+<a href="#">Regular link</a>
+
+<div class="readerlink">
+<a href="#">Should disappear</a>
+</div>
+
+<p>
+	<form action="#">
+		
+		<fieldset>
+			<legend>Name</legend>
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name">
+
+		</fieldset>
+
+		<fieldset>
+			<input type="email" name="email_address" autofocus>
+		</fieldset>
+
+		<fieldset>
+			<input type="color">
+		</fieldset>
+
+		<fieldset>
+			<input name="country" list="country_name">
+<datalist id="country_name">
+    <option value="Afghanistan">
+    <option value="Albania">
+    <option value="Algeria">
+    <option value="Andorra">
+    <option value="Armenia">
+    <option value="Australia">
+    <option value="Austria">
+    <option value="Azerbaijan">
+    <!-- etc. -->
+</datalist>
+		</fieldset>
+
+	</form>
+</p>
+
+<p>
+	<form action="#">
+		
+		<select name="country" id="country">
+			<optgroup label="Africa">
+				<option value="gam">Gambia</option>
+				<option value="mad">Madagascar</option>
+				<option value="nan">Namibia</option>
+			</optgroup>
+
+			<optgroup label="Europe">
+				<option value="fra">France</option>
+				<option value="rus">Russia</option>
+				<option value="uk">UK</option>
+			</optgroup>
+
+			<optgroup label="North America">
+				<option value="can">Canada</option>
+				<option value="mex">Mexico</option>
+				<option value="USA">USA</option>
+			</optgroup>
+		</select>
+
+		
+
+	</form>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import 'reset';
+
+$primarycolor: orange;
+$fontstack: "Open Sans", Helvetica, sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+.nanoo {
+  width: 100px;
+  height: 50px;
+  padding-top: 100px;
+  background: #fc0;
+  border-radius: 50px/100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  h1 {
+  	font: 200% $fontstack;
+  	color: $primarycolor;
+  }
+}
+
+.box { 
+  @include border-radius(10px); 
+  @extend .nanoo;
+  padding: 20px;
+}
