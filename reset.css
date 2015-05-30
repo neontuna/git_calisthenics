@@ -45,29 +45,4 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media (max-width: 600px) {
-  .nanoo, .box {
-    width: 100px;
-    height: 50px;
-    padding-top: 100px;
-    background: #fc0;
-    border-radius: 50px/100px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    text-align: center; }
-    .nanoo h1, .box h1 {
-      font: 200% "Open Sans", Helvetica, sans-serif;
-      color: orange; }
-
-  .box {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px;
-    padding: 20px; } }
-p {
-  -webkit-columns: 3;
-  -moz-columns: 3;
-  columns: 3; }
-
-/*# sourceMappingURL=css3.css.map */
+/*# sourceMappingURL=reset.css.map */
